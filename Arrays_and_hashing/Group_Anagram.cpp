@@ -37,7 +37,7 @@ public:
 
             anagramGroups[sortedString].push_back(strs[i]);
         }
-        for(auto str : anagramGroups){
+        for(auto &str : anagramGroups){
             result.push_back(str.second);
         }
 
